@@ -16,31 +16,12 @@
   <link href="https://fonts.googleapis.com/css?family=Atomic+Age" rel="stylesheet">
   <script src="https://use.fontawesome.com/69bb74e1fb.js"></script>
 
-  <style media="screen">
-    body {
-      background-image: url('{{ asset("img/bg.jpg") }}');
-      background-size: 100% auto;
-      font-family: 'Ubuntu', sans-serif;
-    }
-    .main-content {
-      background: rgba(0,0,0,.5);
-      padding-top: 60px;
-    }
-  </style>
-
   @yield('css')
 
 </head>
 <body>
-  <div id="app">
 
-    @include('layouts.partials._navbar')
-
-    <div class="main-content">
-      @yield('content')
-    </div>
-
-  </div>
+  @yield('content')
 
   <!-- Scripts -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
