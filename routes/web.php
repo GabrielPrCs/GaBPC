@@ -12,12 +12,16 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 })->name('index');
 
-Route::get('/shop', function () {
-    return view('shop.index');
+Route::get('/designs/shop', function () {
+    return view('designs.shop');
 })->name('shop');
+
+Route::get('/designs/gallery', function () {
+    return view('designs.gallery');
+})->name('gallery');
 
 
 // Auth::routes();

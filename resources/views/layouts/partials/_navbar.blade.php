@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark indigo">
+<nav class="navbar navbar-expand-lg navbar-dark indigo fixed-top">
 
   <div class="container">
     <!-- Navbar brand -->
@@ -12,14 +12,14 @@
     <div class="collapse navbar-collapse" id="main-navbar">
         <!-- Links -->
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="{{ route('index') }}">Inicio</a>
+            <li class="nav-item active">
+                <a class="nav-link" href="{{ route('index') }}"><i class="fa fa-home" aria-hidden="true"></i> Inicio</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Acerca</a>
+                <a class="nav-link" data-toggle="modal" data-target="#contact-modal"><i class="fa fa-phone" aria-hidden="true"></i> Contacto</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Contacto</a>
+                <a class="nav-link" data-toggle="modal" data-target="#about-modal"><i class="fa fa-user" aria-hidden="true"></i> Acerca</a>
             </li>
         </ul>
         <!-- Links -->

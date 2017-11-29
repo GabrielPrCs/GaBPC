@@ -48,9 +48,8 @@
     </div>
 
     <div class="row">
-      <div class="col-12 mt-3">
+      <div class="col-12 mt-3 mb-3">
         <h2 class="white-text font-weight-bold text-center">Diseños</h2>
-        <hr>
       </div>
     </div>
 
@@ -58,12 +57,27 @@
       <div class="col-12 offset-md-2 col-md-8">
         <div class="view overlay hm-teal-strong">
           <a href="{{ route('shop') }}">
-            <img src="{{ asset('img/shop.png') }}" class="img-fluid" alt="placeholder">
+            <img src="{{ asset('img/shop.png') }}" class="img-fluid rounded" alt="placeholder">
             <div class="mask flex-center waves-effect waves-light">
-              <p class="white-text">Tienda Online</p>
+              <b class="white-text">Tienda Online</b>
             </div>
           </a>
         </div>
+        <hr>
+      </div>
+    </div>
+
+    <div class="row text-center">
+      <div class="col-12 offset-md-2 col-md-8">
+        <div class="view overlay hm-blue-strong">
+          <a href="{{ route('gallery') }}">
+            <img src="{{ asset('img/gallery.png') }}" class="img-fluid rounded" alt="placeholder">
+            <div class="mask flex-center waves-effect waves-light">
+              <b class="white-text">Galería de imágenes</b>
+            </div>
+          </a>
+        </div>
+        <hr>
       </div>
     </div>
 

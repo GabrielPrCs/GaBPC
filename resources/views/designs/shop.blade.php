@@ -1,5 +1,9 @@
 @extends('layouts.basic')
 
+@section('title')
+  Tienda Online
+@endsection
+
 @section('css')
 <style media="screen">
 body {
@@ -37,7 +41,7 @@ body {
           </li>
         </ul>
         <!-- Links -->
-
+        <a class="nav-link btn btn-primary btn-sm" href="{{ route('index') }}"> Volver a GaBPC</a>
       </div>
 
     </nav>
@@ -51,7 +55,7 @@ body {
           <!--Card-->
           <div class="card">
             <!--Card image-->
-            <img class="img-fluid" src="https://static.pexels.com/photos/270686/pexels-photo-270686.jpeg" alt="Card image cap">
+            <img class="img-fluid" src="{{ asset('img/shop/iphone.jpg') }}" alt="Card image cap">
             <!--Card content-->
             <div class="card-body">
               <!--Title-->
@@ -77,7 +81,7 @@ body {
           <!--Card-->
           <div class="card">
             <!--Card image-->
-            <img class="img-fluid" src="https://static.pexels.com/photos/38568/apple-imac-ipad-workplace-38568.jpeg" alt="Card image cap">
+            <img class="img-fluid" src="{{ asset('img/shop/imac.jpg') }}" alt="Card image cap">
             <!--Card content-->
             <div class="card-body">
               <!--Title-->
@@ -103,7 +107,7 @@ body {
           <!--Card-->
           <div class="card">
             <!--Card image-->
-            <img class="img-fluid" src="https://static.pexels.com/photos/205926/pexels-photo-205926.jpeg" alt="Card image cap">
+            <img class="img-fluid" src="{{ asset('img/shop/beats.jpg') }}" alt="Card image cap">
             <!--Card content-->
             <div class="card-body">
               <!--Title-->
@@ -129,7 +133,7 @@ body {
           <!--Card-->
           <div class="card">
             <!--Card image-->
-            <img class="img-fluid" src="https://static.pexels.com/photos/51383/photo-camera-subject-photographer-51383.jpeg" alt="Card image cap">
+            <img class="img-fluid" src="{{ asset('img/shop/camera.jpg') }}" alt="Card image cap">
             <!--Card content-->
             <div class="card-body">
               <!--Title-->
@@ -155,7 +159,7 @@ body {
           <!--Card-->
           <div class="card">
             <!--Card image-->
-            <img class="img-fluid" src="https://static.pexels.com/photos/275033/pexels-photo-275033.jpeg" alt="Card image cap">
+            <img class="img-fluid" src="{{ asset('img/shop/ds4.jpg') }}" alt="Card image cap">
             <!--Card content-->
             <div class="card-body">
               <!--Title-->
@@ -181,7 +185,7 @@ body {
           <!--Card-->
           <div class="card">
             <!--Card image-->
-            <img class="img-fluid" src="https://static.pexels.com/photos/6416/apple-desk-office-technology.jpg" alt="Card image cap">
+            <img class="img-fluid" src="{{ asset('img/shop/mouse.jpg') }}" alt="Card image cap">
             <!--Card content-->
             <div class="card-body">
               <!--Title-->
@@ -267,7 +271,7 @@ body {
       </div>
     </div>
 
-    <div class="modal fade" id="categories" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade left" id="categories" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-full-height modal-left modal-notify modal-success" role="document">
         <div class="modal-content">
           <div class="modal-body">

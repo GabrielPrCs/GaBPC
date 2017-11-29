@@ -8,7 +8,7 @@
   <!-- CSRF Token -->
   <meta name="csrf-token" content="{{ csrf_token() }}">
 
-  <title>{{ config('app.name', 'Laravel') }}</title>
+  <title>GaBPC | WebDesign</title>
 
   <!-- Styles -->
   <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -17,29 +17,34 @@
   <script src="https://use.fontawesome.com/69bb74e1fb.js"></script>
 
   <style media="screen">
-    body {
-      background-image: url('{{ asset("img/bg.jpg") }}');
-      background-size: 100% auto;
-      font-family: 'Ubuntu', sans-serif;
-    }
-    .main-content {
-      background: rgba(0,0,0,.5);
-      padding-top: 60px;
-    }
+  body {
+    background-image: url('{{ asset("img/bg.jpg") }}');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    font-family: 'Ubuntu', sans-serif;
+  }
+  #app {
+    background: rgba(0,0,0,.5);
+    padding-top: 100px;
+    min-height: 100vh;
+    /*width: 100vw;*/
+  }
   </style>
 
   @yield('css')
 
 </head>
 <body>
+
   <div id="app">
-
     @include('layouts.partials._navbar')
+    @yield('content')
 
-    <div class="main-content">
-      @yield('content')
-    </div>
-
+    <!-- About Modal -->
+    @include('layouts.partials._about-modal')
+    <!-- Contact Modal -->
+    @include('layouts.partials._contact-modal')
   </div>
 
   <!-- Scripts -->

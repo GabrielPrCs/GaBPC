@@ -8,7 +8,7 @@
   <!-- CSRF Token -->
   <meta name="csrf-token" content="{{ csrf_token() }}">
 
-  <title>{{ config('app.name', 'Laravel') }}</title>
+  <title>GaBPC | @yield('title')</title>
 
   <!-- Styles -->
   <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -16,12 +16,16 @@
   <link href="https://fonts.googleapis.com/css?family=Atomic+Age" rel="stylesheet">
   <script src="https://use.fontawesome.com/69bb74e1fb.js"></script>
 
+  @yield('extra-css-links')
+
   @yield('css')
 
 </head>
 <body>
 
-  @yield('content')
+  <div id="app">
+    @yield('content')
+  </div>
 
   <!-- Scripts -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
