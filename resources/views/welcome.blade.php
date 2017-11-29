@@ -50,20 +50,19 @@
     <div class="row">
       <div class="col-12 mt-3">
         <h2 class="white-text font-weight-bold text-center">Diseños</h2>
+        <hr>
       </div>
     </div>
 
-    <div class="row">
+    <div class="row text-center">
       <div class="col-12 offset-md-2 col-md-8">
-        <div class="view overlay hm-zoom">
+        <div class="view overlay hm-teal-strong">
           <a href="{{ route('shop') }}">
-            <img src="{{ asset('img/shop.png') }}" class="img-fluid z-depth-3">
+            <img src="{{ asset('img/shop.png') }}" class="img-fluid" alt="placeholder">
+            <div class="mask flex-center waves-effect waves-light">
+              <p class="white-text">Tienda Online</p>
+            </div>
           </a>
-          <div class="mask flex-center waves-effect waves-light" style="background: rgba(0,0,0,.5)">
-            <a href="{{ route('shop') }}">
-              <p class="white-text text-uppercase">Tienda Online</p>
-            </a>
-          </div>
         </div>
       </div>
     </div>
