@@ -21,8 +21,8 @@
 
     <div class="row text-center">
 
-      <div class="col-12 col-sm-6 offset-md-3 col-md-3">
-        <div class="card card-body">
+      <div class="col-12 col-sm-6 offset-md-2 col-md-4">
+        <div id="frontend" class="card card-body">
           <h4 class="card-title">Desarrollo Frontend</h4>
           <p class="card-text">Utilizando diversas tecnologías, tales como <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a> y <a href="https://vuejs.org/" target="_blank">Vue.js</a>.</p>
         </div>
@@ -32,8 +32,8 @@
         <br>
       </div>
 
-      <div class="col-12 col-sm-6 col-md-3">
-        <div class="card card-body">
+      <div class="col-12 col-sm-6 col-md-4">
+        <div id="backend" class="card card-body">
           <h4 class="card-title">Desarrollo Backend</h4>
           <p class="card-text">Utilizando el framework para PHP <a href="https://www.laravel.com" target="_blank">Laravel</a>.</p>
         </div>
@@ -83,4 +83,18 @@
 
   </div>
 
+@endsection
+
+@section('js')
+  <script>
+  var resize_panel = function() {
+    if($('#frontend').height() < $('#backend').height()) {
+      $('#frontend').height($('#backend').height())
+    } else {
+      $('#backend').height($('#frontend').height())
+    }
+  }
+  $(window).resize(resize_panel);
+  $(window).ready(resize_panel);
+  </script>
 @endsection
